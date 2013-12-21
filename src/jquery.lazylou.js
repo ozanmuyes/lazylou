@@ -5,6 +5,11 @@
  * http://www.ozanmuyes.com
  * dialog@ozanmuyes.com
  *
+ * CHANGELOG
+ * 1. ADD: Pre-loading support for LazyLou.
+ * 2. CHA: Many changes had been made for maximum minifying support.
+ * 3. DRP: PLUGIN_NAME variable and properties dropped.
+ *
  */
 
 /* Pre-requests */
@@ -575,7 +580,7 @@
 					autoAdjustElementSize: true,
 
 					/**
-					 * In case of unable-to-gather-spriteDimension from options, if element's
+					 * In case of unable-to-gather spriteDimension from options, if element's
 					 * size is set, assign it to the spriteDimension.
 					 * @type {Boolean}
 					 */
@@ -584,7 +589,7 @@
 					/**
 					 * The variable to hold image name to use multiple elements registered
 					 * for that name. Also it's value will be stored in m_Names[] array.
-					 * @type {[type]}
+					 * @type {String}
 					 */
 					name: null,
 					/**
