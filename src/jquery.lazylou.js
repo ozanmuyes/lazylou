@@ -339,25 +339,6 @@
 
 			function loadImage(p_Self) {
 
-				// var c_ImagePath = "";
-
-				// $.ajax({
-
-				// 	async: false,
-				// 	data: {delay: 350000, path: p_Self.options.src},
-				// 	url: "image.php"
-
-				// }).done(function(p_Data) {
-
-				// 	if (p_Self.options.verbose)
-				// 		console.log(PLUGIN_NAME + ".js | Image loaded from \"" + p_Self.options.src + "\".");
-
-				// 	c_ImagePath = p_Data;
-
-				// });
-
-				// $.lazylouLoadImage(c_ImagePath).done(function(p_Image) {
-
 				$.lazylouLoadImage(p_Self.options.src).done(function(p_Image) {
 
 					showImage(p_Self, p_Image);
@@ -525,49 +506,6 @@
 		//
 		$.fn[PLUGIN_NAME] = function(p_Options) {
 
-			// var c_Caller = this;
-			// var c_Elements = [];
-			// c_Elements[0] = c_Caller;
-
-			// if (p_Options.childrenSelector !== undefined) {
-
-			// 	var c_ChildrenElements = $(c_Caller).find(p_Options.childrenSelector);
-			// 	var c_ChildrenElementsCount = c_ChildrenElements.length;
-			// 	var c_Inst = null;
-
-			// 	for (var i = 0; i < c_ChildrenElementsCount; i++) {
-
-			// 		if (!$.data(c_ChildrenElements[i], PLUGIN_NAME)) {
-
-			// 			c_Inst = new lazylou(c_ChildrenElements[i], p_Options);
-			// 			c_Inst.options.spriteIndex = $.fn[PLUGIN_NAME].getSpriteIndex(p_Options.childrenSpriteIndexes, c_Inst);
-
-			// 			$.data(c_ChildrenElements[i], PLUGIN_NAME, c_Inst);
-
-			// 		}
-
-			// 	}
-
-			// 	return null;
-
-			// } else {
-
-			// 	if (p_Options.childrenSpriteIndexes !== undefined) {
-
-			// 		console.log(PLUGIN_NAME + ".js | Error | childrenSelector property has to be set in order to use childrenSpriteIndexes.");
-
-			// 		return;
-
-			// 	}
-
-			// 	return c_Caller;
-
-			// }
-
-			// return null;
-			//
-			// Do NOT uncomment obsolete code above
-
 			if (!$.fn[PLUGIN_NAME].loadingImageLoaded) {
 
 				// TODO first of all load loading image
@@ -606,29 +544,6 @@
 			}
 
 			return c_Callers[0];
-			//
-			// this.each(function() {
-
-			// 	$(this).css("background-repeat", "no-repeat")
-			// 		.css("background-position", "center center")
-			// 		.css("background-image", 'url("img/loading.gif")');
-
-			// });
-
-			// return this.each(function(p_Index, p_Element) {
-
-			// 	if (this.length > 1) {
-
-			// 		// this is a sequence, to initiate lazylou in a row many times
-
-			// 		p_Options = $.extend(p_Options, '{"_siblingID": ' + p_Index + '}');
-
-			// 	}
-
-			// 	if (!$.data(this, PLUGIN_NAME))
-			// 		$.data(this, PLUGIN_NAME, new lazylou(this, p_Options));
-
-			// });
 
 		};
 
