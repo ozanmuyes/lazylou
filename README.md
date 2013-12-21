@@ -29,8 +29,8 @@ As you've been told, these properties are can be set either HTML data and jQuery
 
 |Name|Parameters|Explanation|
 |:---|:---------|:----------|
-|onInitialized|null|Called after initialization of particular element.|
-|onFinished|null|Called after image is loaded.|
+|`onInitialized`|null|Called after initialization of particular element.|
+|`onFinished`|null|Called after image is loaded.|
 
 #4. Examples
 
