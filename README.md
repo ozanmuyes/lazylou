@@ -1,8 +1,12 @@
 ![Lou](https://raw.github.com/ozanmuyes/lazylou/master/img/lou.png)
 
-Meet Lou, a.k.a. **Lazy Lou**. The guy sits on the couch all the time after load your images.  That's it. There's no more story to tell about Lou. He is very self-explanatory.- - -
+Meet Lou, a.k.a. **Lazy Lou**. The guy sits on the couch all the time after load your images.  
+That's it. There's no more story to tell about Lou. He is very self-explanatory.
 
-#1. Waking up LouYou can call Lou to load your images a few different ways, and also combining them with each other. For example you can set some of properties (let's say `src`) by HTML and some of other properties (let's say `spriteDimension`) by jQuery. This is useful when using PHP, so you don't need to set `src` property of individual image by jQuery.  It's OK, but what if you set same properties by HTML and also jQuery? Lou loves HTML than jQuery, hence **the properties set by HTML overrides the properties set by jQuery**.
+#1. Waking Lou up
+You can call Lou to load your images a few different ways, and also combining them with each other. For example you can set some of properties (let's say `src`) by HTML and some of other properties (let's say `spriteDimension`) by jQuery. This is useful when using PHP, so you don't need to set `src` property of individual image by jQuery.  
+It's OK, but what if you set same properties by HTML and also jQuery? Lou loves HTML than jQuery, hence **the properties set by HTML overrides the properties set by jQuery**.
+Despite his laziness, the **responsive design support** his second best feature so far.
 
 #2. Properties
 
@@ -24,8 +28,8 @@ As you've been told, these properties are can be set either HTML data and jQuery
 
 |Name|Parameters|Explanation|
 |:---|:---------|:----------|
-|onInitialized|null|Called after initialization of particular element.|
-|onFinished|null|Called after image is loaded.|
+|`onInitialized`|null|Called after initialization of particular element.|
+|`onFinished`|null|Called after image is loaded.|
 
 #4. Examples
 
@@ -54,9 +58,7 @@ jQuery is enough to use LazyLou.
 #6. License 
 This plugin licensed under [MIT License][MITL]. Short of long, feel free to use, modify, distribute and fork. 
 
-- - -
-
 Images from [http://ballicons.net](http://ballicons.net)
 
 [MITL]: http://opensource.org/licenses/MIT
-[41]: https://github.com/ozanmuyes/lazylou#11-calling-lou
+[41]: https://github.com/ozanmuyes/lazylou#41-loading-images-with-minimum-effort
