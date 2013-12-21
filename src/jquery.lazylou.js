@@ -575,8 +575,8 @@
 					autoAdjustElementSize: true,
 
 					/**
-					 * In case of unable-to-gather-spriteDimension from options, if element size is set,
-					 * assign it to the spriteDimension
+					 * In case of unable-to-gather-spriteDimension from options, if element's
+					 * size is set, assign it to the spriteDimension.
 					 * @type {Boolean}
 					 */
 					autoAdjustSpriteSize: true,
