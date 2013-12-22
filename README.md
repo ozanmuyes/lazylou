@@ -5,7 +5,9 @@ That's it. There's no more story to tell about Lou. He is very self-explanatory.
 
 #1. Waking Lou up
 You can call Lou to load your images a few different ways, and also combining them with each other. For example you can set some of properties (let's say `src`) by HTML and some of other properties (let's say `spriteDimension`) by jQuery. This is useful when using PHP, so you don't need to set `src` property of individual image by jQuery.  
-It's OK, but what if you set same properties by HTML and also jQuery? Lou loves HTML than jQuery, hence **the properties set by HTML overrides the properties set by jQuery**.
+
+It's OK, but what if you set same properties by HTML and also jQuery? Lou loves HTML than jQuery, hence **the properties set by HTML overrides the properties set by jQuery**.  
+
 Despite his laziness, the **responsive design support** his second best feature so far.
 
 #2. Properties
@@ -35,16 +37,19 @@ As you've been told, these properties are can be set either HTML data and jQuery
 
 ##4.1 Loading Images with Minimum Effort
 
-+ jQuery does all the job. HTML and jQuery codes respectively;
-`<div class="lazylou"></div>`
++ jQuery does all the job.  
+HTML and jQuery codes respectively;  
+`<div class="lazylou"></div>`  
 `$("div.lazylou").lazylou({src: "img/1x5.jpg"});`
 
-+ HTML is involved to set property. HTML and jQuery codes respectively;
-`<div class="lazylou" data-lazylou-options='{"src": "img/1x5.jpg"}'></div>`
++ HTML is involved to set property.
+
+ + HTML and jQuery codes respectively;  
+`<div class="lazylou" data-lazylou-options='{"src": "img/1x5.jpg"}'></div>`  
 `$("div.lazylou").lazylou();`
 
-+ HTML is involved to set property. HTML and jQuery codes respectively;
-`<div class="lazylou" data-lazylou-options-src="img/1x5.jpg"></div>`
+ + HTML and jQuery codes respectively;  
+`<div class="lazylou" data-lazylou-options-src="img/1x5.jpg"></div>`  
 `$("div.lazylou").lazylou();`
 
 These two examples are doing the same thing; load the image and show first sprite.
@@ -56,7 +61,15 @@ These two examples are doing the same thing; load the image and show first sprit
 jQuery is enough to use LazyLou.
 
 #6. License 
-This plugin licensed under [MIT License][MITL]. Short of long, feel free to use, modify, distribute and fork. 
+This plugin licensed under [MIT License][MITL]. Short of long, feel free to use, modify, distribute and fork.
+
+- - -
+
+#Abbreviations
+1. ADD: A new feature added.
+2. ALT: Something altered.
+3. Something (feature, function or property) dropped.
+4. A bug fixed.
 
 Images from [http://ballicons.net](http://ballicons.net)
 
