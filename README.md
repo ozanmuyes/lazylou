@@ -37,31 +37,41 @@ As you've been told, these properties are can be set either HTML data and jQuery
 
 ##4.1 Loading Images with Minimum Effort
 
-+ jQuery does all the job.  
+1. jQuery does all the job.  
 HTML and jQuery codes respectively;  
 `<div class="lazylou"></div>`  
 `$("div.lazylou").lazylou({src: "img/1x5.jpg"});`
 
-+ HTML is involved to set property.
+2. HTML is involved to set property.
 
- + HTML and jQuery codes respectively;  
+ 1. HTML and jQuery codes respectively;  
 `<div class="lazylou" data-lazylou-options='{"src": "img/1x5.jpg"}'></div>`  
 `$("div.lazylou").lazylou();`
 
- + HTML and jQuery codes respectively;  
+ 2. HTML and jQuery codes respectively;  
 `<div class="lazylou" data-lazylou-options-src="img/1x5.jpg"></div>`  
 `$("div.lazylou").lazylou();`
 
 These two examples are doing the same thing; load the image and show first sprite.
 
-**REMARKS**: Notice the single-quote and double-quote sequence. **Single-quote should start the string of data value.**
+**REMARKS**: Notice the single-quote and double-quote sequence on 4.1.2.1. **Single-quote should begin and finalize the string of data value.**
 
 #5. Dependencies
 
 jQuery is enough to use LazyLou.
 
-#6. License 
-This plugin licensed under [MIT License][MITL]. Short of long, feel free to use, modify, distribute and fork.
+#6. Add-ons
+
+#7. Browser Support and Known Issues
+##1. Tested Browsers
+ 1. Mozilla Firefox 4-22
+ 2. Chrome 5-31
+
+##2. Known Issues
+ 1. Doesn't work IE 6
+
+#8. License 
+This plugin licensed under [MIT License][MITL]. Short of the long story, feel free to use, modify, distribute and fork.
 
 - - -
 
